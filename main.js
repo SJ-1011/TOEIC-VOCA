@@ -1,3 +1,18 @@
+function setGoal() {
+  const p = document.getElementById("goal");
+  const goal = JSON.parse(localStorage.getItem("goal") || "[]");
+
+  if (goal.length === 0) {
+    goal.push(800);
+  }
+
+  p.textContent = `목표: ${goal}점`;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setGoal();
+});
+
 function addWord(event) {
   event.preventDefault();
   const english = event.target.english.value.trim();
