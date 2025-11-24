@@ -1,0 +1,18 @@
+@import "./reset.css";
+body {
+  width: 30rem;
+  margin-inline: auto;
+  background-color: #60ff75;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.place {
+  background-color: #fff;
+  border: #fff 0.0313rem solid;
+  border-radius: 1rem;
+  padding: 1.875rem;
+}
