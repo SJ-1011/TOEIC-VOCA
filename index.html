@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOEIC VOCA 공부</title>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>TOEIC VOCA 공부</h1>
+      <p>목표: 800점</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>단어 추가하기</h2>
+        <form onsubmit="addWord(event)">
+          <label for="english">영어 단어</label>
+          <input name="english" type="text" />
+
+          <label for="korean">뜻</label>
+          <input name="korean" type="text" />
+
+          <button type="submit">추가하기</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>단어 퀴즈</h2>
+        <button type="button" onclick="setQuiz()">문제 불러오기</button>
+        <form onsubmit="getAnswer(event)">
+          <button type="submit">답 맞히기</button>
+          <table>
+            <tr>
+              <th>영어</th>
+              <th>뜻</th>
+              <th>답</th>
+            </tr>
+            <tbody id="quizTbody"></tbody>
+          </table>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
