@@ -1,47 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TOEIC VOCA 공부</title>
-    <script src="./main.js"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <title>toeic-voca</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/main.tsx"></script>
   </head>
-  <body>
-    <header class="place">
-      <h1>TOEIC VOCA 공부</h1>
-      <p id="goal"></p>
-    </header>
-
-    <main class="place">
-      <section>
-        <h2>단어 추가하기</h2>
-        <form onsubmit="addWord(event)">
-          <label for="english">영어 단어</label>
-          <input name="english" type="text" />
-
-          <label for="korean">뜻</label>
-          <input name="korean" type="text" />
-
-          <button type="submit">추가하기</button>
-        </form>
-      </section>
-
-      <section>
-        <h2>단어 퀴즈</h2>
-        <button type="button" onclick="setQuiz()">문제 불러오기</button>
-        <form onsubmit="getAnswer(event)">
-          <button type="submit">답 맞히기</button>
-          <table>
-            <tr>
-              <th>영어</th>
-              <th>뜻</th>
-              <th>답</th>
-            </tr>
-            <tbody id="quizTbody"></tbody>
-          </table>
-        </form>
-      </section>
-    </main>
-  </body>
+  <body class="max-w-120 mx-auto bg-white" id="root"></body>
 </html>
