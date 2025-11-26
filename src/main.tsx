@@ -7,7 +7,7 @@ import Header from "./components/Header.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/TOEIC-VOCA">
       <Header></Header>
       <App />
       <Footer></Footer>
